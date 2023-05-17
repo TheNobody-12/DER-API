@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detector</h1>
+        <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+            <input type="file" name="imagefile" accept="image/*" required>
+            <input type="submit" value="Predict">
+        </form>
+        {% if prediction %}
+            <!-- <p>{{ prediction }}</p> -->
+            <img src="{{img_path}}" height="400px" width="400px">
+            <h2> Prediction   : <i> {{prediction}} </i></h2>        {% endif %}
+    </div>
+</body>
+</html>
