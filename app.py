@@ -36,6 +36,10 @@ def Predict_emotion(filepath):
 def main():
     return render_template("home.html")
 
+@app.route("/reset",methods=["POST"])
+def reset():
+    return render_template("home.html")
+
 @app.route("/predict", methods=["POST"])
 def predict():
     if request.method == "POST":
