@@ -52,7 +52,10 @@ I have Made a Website for Dog Emotion Recognition Model with Backend in FLask Fr
  
 
 ### Preview of Website:
+![image](https://github.com/TheNobody-12/DER-API/assets/75840118/c9a22caa-50a5-46c4-982d-14444bb0a97d)
 
+###Results
+![image](https://github.com/TheNobody-12/DER-API/assets/75840118/34600c07-3824-48ee-9543-2ca626269830)
 
 ## ❤️ Project Contributor
 
